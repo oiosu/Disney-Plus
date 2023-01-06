@@ -1,4 +1,4 @@
-# 🎠Disney-Plus
+# 🎠Disney-Plus (React)
 
 #### [◼ react-disney-plus-app 폴더 생성 및 리액트 설치](https://github.com/oiosu/Disney-Plus/blob/main/01.%20Disney%20Plus%20%EC%95%B1%20%EB%A7%8C%EB%93%A4%EA%B8%B0%20%EC%8B%9C%EC%9E%91/00_Create-React-App%EC%9C%BC%EB%A1%9C%20%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/Create%20React%20App%EC%9C%BC%EB%A1%9C%20%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0.md)
 
