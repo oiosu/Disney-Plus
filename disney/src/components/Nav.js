@@ -1,7 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 
 const Nav = () => {
+
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                setShow(true);
+            } else {
+                setShow(false);
+            }
+        })
+    })
+    return () => {
+        window.removeEventListener('scroll', () => { });
+    }
+
+
     return (
         <NavWrapper>
             <Logo>
@@ -30,7 +47,7 @@ const NavWrapper = styled.nav`
   z-index: 3;
 `;
 
-const Logo = styled.a`
+const Logo = styled.a`ajf
   padding: 0;
   width: 80px;
   margin-top: 4px;
