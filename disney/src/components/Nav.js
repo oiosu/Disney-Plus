@@ -1,26 +1,28 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import styled from 'styled-components';
 
 const Nav = () => {
 
     const [show, setShow] = useState(false);
 
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                setShow(true);
-            } else {
-                setShow(false);
-            }
-        })
-    })
-    return () => {
-        window.removeEventListener('scroll', () => { });
+    const handleScroll = () => {
+        if (window.scrollY > 50) {
+            setShow(true);
+        } else {
+            setShow(false);
+        }
     }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, [handleScroll])
 
 
     return (
-        <NavWrapper>
+        <NavWrapper show={show}>
             <Logo>
                 <img
                     alt="Disney Plus Logo"
@@ -47,7 +49,7 @@ const NavWrapper = styled.nav`
   z-index: 3;
 `;
 
-const Logo = styled.a`ajf
+const Logo = styled.a`
   padding: 0;
   width: 80px;
   margin-top: 4px;
