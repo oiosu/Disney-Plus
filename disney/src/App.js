@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import './App.css';
 import Nav from './components/Nav';
+import Banner from './components/Banner';
 
 function App() {
   return (
     <Container>
       <Nav />
+      <Banner />
     </Container>
   );
 }
@@ -19,7 +21,7 @@ const Container = styled.main`
   overflow-x: hidden;
   display: block;
   top: 72px;
-  padding: 0 calc( 3.5vw + 5px);
+  padding: 0 calc(3.5vw + 5px);
 
   &:after {
     background: url("./images/home-background.png") center center / cover no-repeat fixed;
