@@ -20,7 +20,7 @@ const Nav = () => {
     }, [handleScroll]);
 
     return (
-        <NavWrapper show={show}>
+        <NavWrapper show={show.toString()}>
             <Logo>
                 <img
                     alt="Disney Plus Logo"
